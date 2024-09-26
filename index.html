@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackMyRoute</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css\styles.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="py-3">
+        <nav class="container bg-white shadow-none">
+            <div class="nav-wrapper d-flex d-lg-inline-flex align-items-center">
+                <a href="#!" class="brand-logo">
+                    <h1 class="jost-component text-black fs-1 my-0">TrackMyRoute</h1>
+                </a>
+
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class="fa-solid fa-bars text-black"></i></a>
+            </div>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#beneficios" style="color: black;">Beneficios</a></li>
+                <li><a href="#planes" style="color: black;">Planes</a></li>
+                <li><a href="#faq" style="color: black;">FAQ</a></li>
+                <li class="me-2">
+                    <a href="https://trackmyrouteapp.netlify.app/">
+                        <md-outlined-button>Iniciar Sesión</md-outlined-button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="sidenav pt-5" id="mobile-demo">
+            <li><a href="#beneficios" style="color: black;">Beneficios</a></li>
+            <li><a href="#planes" style="color: black;">Planes</a></li>
+            <li><a href="#faq" style="color: black;">FAQ</a></li>
+            <li class="my-2 mx-3">
+                <a href="https://trackmyrouteapp.netlify.app/">
+                    <md-outlined-button>Iniciar Sesión</md-outlined-button>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="py-5 banner">
+            <div class="container">
+                <div class="row justify-content-center align-items-center text-center text-lg-start">
+                    <div class="col-10 col-lg-6">
+                        <h1 class="fw-black text-huge">Tu Guía Personal en la<br class="d-none d-lg-block">
+                            Caótica Ciudad</h1>
+                        <p class="fs-3 fw-normal my-4">Descubre la forma más fácil de navegar por el
+                            transporte público con TrackMyRoute</p>
+                            <a href="https://trackmyrouteapp.netlify.app/">
+                                <md-filled-button>Empieza ahora!</md-filled-button>
+                            </a>
+                        
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="w-100" src="assets\hero_img.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="beneficios" class="beneficios mt-5">
+            <div class="container">
+                <h2 class="jost-component fs-1 mb-4 text-center">Beneficios</h2>
+                <div class="row justify-content-center">
+                    <div class="col-10 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="rounded-4 shadow bg-secondary py-4 px-3">
+                            <i class="material-icons large">directions_bus</i><i class="material-icons large">directions</i>
+                            <h3 class="fs-3 mt-2">Planificación Eficiente</h3>
+                            <p class="fs-5 fw-light">Encuentra la ruta más rápida y conveniente, ahorrando tiempo y
+                                minimizando esperas.</p>
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="rounded-4 shadow bg-secondary py-4 px-3">
+                            <i class="material-icons large">location_on</i><i class="material-icons large">map</i>
+                            <h3 class="fs-3 mt-2">Información actualizada</h3>
+                            <p class="fs-5 fw-light">Accede a información actualiada, entre intervalos de tiempo de llegada y ubicación de paraderos.</p>
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="rounded-4 shadow bg-secondary py-4 px-3">
+                            <i class="material-icons large">event</i><i class="material-icons large">schedule</i>
+                            <h3 class="fs-3 mt-2">Horarios Precisos</h3>
+                            <p class="fs-5 fw-light">Accede a horarios actualizados para planificar tus
+                                viajes de manera efectiva.</p>
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                        <div class="rounded-4 shadow bg-secondary py-4 px-3">
+                            <i class="material-icons large">trending_down</i><i class="material-icons large">monetization_on</i>
+                            <h3 class="fs-3 mt-2">Ahorro de Dinero y Estrés</h3>
+                            <p class="fs-5 fw-light">Reduce el estrés y costos al tomar decisiones informadas y evitar
+                                sorpresas desagradables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container jost-component">
+                <div class="row justify-content-center">
+                    <div class="col col-lg-10 text-center">
+                        <h3 class="fs-1">Aliados Estratégicos</h3>
+                        <img class="w-100" src="./assets/aliados.png" alt="aliados-de-trackmyroute">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="company-buses py-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-5 order-2 order-md-1">
+                        <img class="w-100" src="assets\bus-company.png">
+                    </div>
+                    <div class="col-10 col-lg-7 order-1 order-md-2">
+                        <h1 class="fw-black text-huge">Únete a nuestra plataforma como empresa de transporte público
+                        </h1>
+                        <p class="fs-3 fw-normal my-4">En TrackMyRoute, creemos en la colaboración para transformar la
+                            movilidad urbana. Si eres una empresa de transporte público en Lima, queremos invitarte a
+                            ser parte de nuestra plataforma y aprovechar todas las ventajas que ofrecemos.</p>
+                        <a class="waves-effect waves-light btn-large rounded-pill fs-5 fw-bold"
+                            style="background-color:#005893" href="https://trackmyrouteapp.netlify.app/">
+                            ¡Regístrate aquí!</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="jost-component fs-1 mb-4 text-center">Funcionalidades de nuestra APP</h2>
+            <div class="functionality-container">
+                <div class="funcionality">
+                    <h5>Encuentra tu ruta</h5>
+                    <img src="assets/efficient_planning.png" alt="Efficient Planning" class="functionality-image">
+                </div>
+                <div class="funcionality">
+                    <h5>Obtén Promociones</h5>
+                    <img src="assets/get_promotions.png" alt="Get Promotions" class="functionality-image">
+                </div>
+            </div>
+            <div class="functionality-container">
+                <div class="funcionality">
+                    <h5>Llega a tiempo a tu destino</h5>
+                    <img src="assets/on_time.png" alt="Get on time"  class="functionality-image">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mb-5">
+            <h3 class="custom-container-reviews-title jost-component fw-bold text-center fs-1 mb-2">
+                Lo que dicen nuestros usuarios
+            </h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 my-3">
+                        <div class="shadow rounded-4 py-4 px-3 d-flex align-items-center bg-light">
+
+                            <img class="rounded-circle" src="assets\persona1.jpg" style="width: 100px; height: 100px;">
+                            <div class="ms-3">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <h5 class="my-2 fs-5">Oscar Flores</h5>
+                                <p>Me encanta esta aplicación, me ayuda mucho a organizarme</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 my-3">
+                        <div class="shadow rounded-4 py-4 px-3 d-flex align-items-center bg-light">
+
+                            <img class="rounded-circle" src="assets\persona2.jpg" style="width: 100px; height: 100px;">
+                            <div class="ms-3">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <h5 class="my-2 fs-5">Oscar Flores</h5>
+                                <p>Me encanta esta aplicación, me ayuda mucho a organizarme</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 my-3">
+                        <div class="shadow rounded-4 py-4 px-3 d-flex align-items-center bg-light">
+
+                            <img class="rounded-circle" src="assets\persona3.jpg" style="width: 100px; height: 100px;">
+                            <div class="ms-3">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <h5 class="my-2 fs-5">Oscar Flores</h5>
+                                <p>Me encanta esta aplicación, me ayuda mucho a organizarme</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="planes" class="planes mb-5">
+            <div class="container">
+                <h2 class="jost-component fs-1 mb-4 text-center">Planes</h2>
+                <div class="row justify-content-center">
+                    <div class="col-10 col-md-6 col-lg-4">
+                        <div class="rounded-4 shadow bg-white border border-gray-600 py-3 px-2 text-center">
+                            <h3 class="jost-component fw-bold text-center fs-1 mb-3">FREE</h3>
+                            <ul class="text-start fs-5 mb-4">
+                                <li class="smaller-text"><img src="assets/check.png" alt="Check" class="check-icon">
+                                    Visualiza las mejores rutas a tu destino</li>
+                                <li class="smaller-text"><img src="assets/check.png" alt="Check" class="check-icon">
+                                    Busca
+                                    empresas de transporte y sus rutas</li>
+                                <li class="smaller-text"><img src="assets/check.png" alt="Check" class="check-icon">
+                                    Recarga
+                                    y paga tus pasajes a través del app</li>
+                            </ul>
+                            <a href="https://trackmyrouteapp.netlify.app/">
+                                <md-filled-button class="fs-6 mt-2 w-50 py-1">¡EMPEZAR AHORA!</md-filled-button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-10 col-md-6 col-lg-4 mt-4 mt-md-0">
+                        <div class="rounded-4 shadow bg-white border border-gray-600 py-3 px-2 text-center">
+                            <h3 class="jost-component fw-bold text-center fs-1 mb-0">S/ 9.99</h3>
+                            <p class="jost-component fs-5 fw-bold mt-0 mb-3">mensual</p>
+                            <ul class="text-start fs-5 mb-4">
+                                <li class="smaller-text"><img src="assets/check.png" alt="Check" class="check-icon">
+                                    Todo lo
+                                    del plan Gratis</li>
+                                <li class="smaller-text"><img src="assets/check.png" alt="Check" class="check-icon">
+                                    Monitoreo de buses en tiempo real</li>
+                                <li class="smaller-text"><img src="assets/check.png" alt="Check" class="check-icon">
+                                    Vista
+                                    de asientos disponibles</li>
+                                <li class="smaller-text"><img src="assets/check.png" alt="Check" class="check-icon">
+                                    Descuentos y promociones en viajes</li>
+                            </ul>
+                            <a href="https://trackmyrouteapp.netlify.app/">
+                                <md-filled-button class="fs-6 mt-2 w-50 py-1">¡EMPEZAR AHORA!</md-filled-button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2 class="fs-1 fw-bold text-center jost-component">Preguntas Frecuentes</h2>
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-xl-9">
+                        <ul class="collapsible popout">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">play_arrow</i>¿Qué es
+                                    track my route?</div>
+                                <div class="collapsible-body"><span>El propósito de TrackMyRoute es ayudar a las
+                                        personas a planificar y realizar
+                                        viajes en transporte público de manera fácil y eficiente, contribuyendo así
+                                        a reducir los costos
+                                        de transporte y la congestión de tráfico.</span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">play_arrow</i>¿Cómo
+                                    funciona TrackMyRoute?</div>
+                                <div class="collapsible-body"><span>TrackMyRoute utiliza datos actualizados y
+                                        mapas interactivos para ofrecerte
+                                        las mejores rutas disponibles. Simplemente ingresa tu ubicación y destino, y
+                                        nuestra aplicación
+                                        te mostrará las opciones más convenientes y eficientes para tu viaje.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">play_arrow</i>¿Qué
+                                    información ofrece sobre los horarios?</div>
+                                <div class="collapsible-body"><span>Nuestra aplicación proporciona horarios
+                                        actualizados, lo que
+                                        significa que siempre tendrás la información más reciente sobre los intervalos de horarios de llegada
+                                        de los buses en el area.</span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">play_arrow</i>¿Puedo
+                                    recibir notificaciones sobre cambios en las rutas?</div>
+                                <div class="collapsible-body"><span>TrackMyRoute ofrece notificaciones sobre contratiempos en las rutas, 
+                                    permitiendo a los usuarios estar informados y preparados para
+                                        abordar . Esto indica
+                                        que sí, como usuario de la aplicación, puedes recibir notificaciones sobre
+                                        cambios en las rutas.</span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">play_arrow</i>¿Cómo
+                                    contacto al equipo de soporte?</div>
+                                <div class="collapsible-body"><span>Si tienes alguna pregunta, problema o
+                                        simplemente deseas brindarnos tu
+                                        opinión, puedes ponerte en contacto con nuestro equipo de soporte a través
+                                        de nuestro formulario
+                                        en línea en la sección de contacto de nuestra página web. Estamos aquí para
+                                        ayudarte y
+                                        asegurarnos de que tengas la mejor experiencia posible con nuestra
+                                        aplicación.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-black px-5 px-sm-0">
+        <div class="container  py-5">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-md-4 my-3 my-lg-0">
+                    <h3 class="text-white fw-bold mb-3 fs-5">Empresa</h3>
+                    <a href="#" class="fw-light text-white d-block">Nosotros</a>
+                    <a href="#" class="fw-light text-white d-block">Blog</a>
+                    <a href="#" class="fw-light text-white d-block">Trabaja con nosotros</a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-4  my-3 my-lg-0">
+                    <h3 class="text-white fw-bold mb-3 fs-5">Ayuda</h3>
+                    <a href="#" class="fw-light text-white d-block">Atención al Cliente</a>
+                    <a href="#faq" class="fw-light text-white d-block">Preguntas Frecuentes</a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-4  my-3 my-lg-0">
+                    <h3 class="text-white fw-bold mb-3 fs-5">Legal</h3>
+                    <a href="#" class="fw-light text-white d-block">Términos y Condiciones</a>
+                    <a href="#" class="fw-light text-white d-block">Políticas de Privacidad</a>
+                    <a href="#" class="fw-light text-white d-block">Libro de Reclamaciones</a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-4  my-3 my-lg-0">
+                    <div class="d-inline-block">
+                        <h3 class="text-white fw-bold mb-3 fs-5">Síguenos en:</h3>
+                        <div class="d-flex justify-content-between">
+                            <a href=""> <i class="fa-brands fa-square-facebook text-white fa-2x"></i></a>
+                            <a href=""> <i class="fa-brands fa-linkedin text-white fa-2x"></i></a>
+                            <a href=""> <i class="fa-brands fa-instagram text-white fa-2x"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center text-white py-4 container">
+            Desarrollado por <b class="text-uppercase">INNOVATECH</b>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "@material/web/": "https://esm.run/@material/web/"
+          }
+        }
+      </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+        });
+    </script>
+</body>
+
+</html>
